@@ -1,0 +1,20 @@
+!pip install stopwordsiso
+!pip install stanza
+!pip install gradio
+!pip install torch
+
+import nltk
+import pandas as pd
+from nltk import word_tokenize
+from nltk.tag import untag
+from nltk import UnigramTagger
+from nltk.corpus import indian
+from collections import defaultdict
+from stopwordsiso import stopwords
+import stanza
+import random
+import gradio as gr
+
+stanza.download('mr')
+nltk.download('punkt')
+nltk.download('indian')
